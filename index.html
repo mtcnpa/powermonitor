@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring Power Consumption</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Monitoring Power Consumption</h1>
+    </header>
+    <main>
+        <section id="voltage-1phase">
+            <h2>Voltage 1-Phase</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>R</th>
+                            <th>S</th>
+                            <th>T</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="voltage-1phase-R"></td>
+                            <td id="voltage-1phase-S"></td>
+                            <td id="voltage-1phase-T"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <section id="voltage-3phase">
+            <h2>Voltage 3-Phase</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>R</th>
+                            <th>S</th>
+                            <th>T</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="voltage-3phase-R"></td>
+                            <td id="voltage-3phase-S"></td>
+                            <td id="voltage-3phase-T"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="ampere">
+            <h2>Ampere</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>R</th>
+                            <th>S</th>
+                            <th>T</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="ampere-R"></td>
+                            <td id="ampere-S"></td>
+                            <td id="ampere-T"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <section id="kwh">
+            <h2>kWh</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>R</th>
+                            <th>S</th>
+                            <th>T</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="kwh-R"></td>
+                            <td id="kwh-S"></td>
+                            <td id="kwh-T"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <section id="kvarh">
+            <h2>kVARh</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>R</th>
+                            <th>S</th>
+                            <th>T</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="kvarh-R"></td>
+                            <td id="kvarh-S"></td>
+                            <td id="kvarh-T"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="graphs">
+            <h2>Graphs</h2>
+            <div class="chart-container">
+                <canvas id="voltage1PhaseChart"></canvas>
+                <canvas id="voltage3PhaseChart"></canvas>
+                <canvas id="ampereChart"></canvas>
+                <canvas id="kwhChart"></canvas>
+                <canvas id="kvarhChart"></canvas>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
